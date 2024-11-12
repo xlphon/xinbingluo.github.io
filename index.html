@@ -3,15 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to Xinbing's Website</title>
+  <title>Xinbing Luo - Personal Website</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-    h1 { color: #4CAF50; }
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f6f2;
+      color: #333;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 800px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+      text-align: center;
+      color: #333;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .profile img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+
+    .profile h2 {
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .profile p {
+      color: #555;
+    }
+
+    .intro-text {
+      margin-top: 20px;
+      font-size: 1em;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h3 {
+      font-size: 1.5em;
+      color: #333;
+      border-bottom: 2px solid #4CAF50;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .section-content {
+      margin-left: 10px;
+    }
+
+    .section-list {
+      list-style-type: none;
+    }
+
+    .section-list li {
+      font-size: 1em;
+      margin: 5px 0;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 2em;
+      margin: 0 10px;
+      color: #e67e22;
+    }
+
+    .social-icons a:hover {
+      color: #4CAF50;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello, I'm Xinbing Luo!</h1>
-  <p>Welcome to my personal website where I share my research in linguistics.</p>
-  <p>Contact me at: <a href="mailto:xl538@cam.ac.uk">xl538@cam.ac.uk</a></p>
+  <div class="container">
+    <div class="profile">
+      <img src="your-profile-image.jpg" alt="Profile Picture">
+      <h1>Miss Xinbing Luo</h1>
+      <h2>PhD student in Theoretical and Applied Linguistics</h2>
+      <p>University of Cambridge</p>
+    </div>
+
+    <p class="intro-text">
+      Welcome! I am a PhD student at the University of Cambridge. 
+      I obtained my MPhil in Theoretical and Applied Linguistics at the University of Cambridge,
+      specializing in phonetics and psycholinguistics. 
+    </p>
+
+    <!-- Interests Section -->
+    <div class="section">
+      <h3>Interests</h3>
+      <ul class="section-list">
+        <li>Implicit learning</li>
+        <li>Prosody</li>
+        <li>Lexical tone</li>
+        <li>Speech perception</li>
+        <li>Second language acquisition</li>
+      </ul>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section">
+      <h3>Education</h3>
+      <ul class="section-list">
+        <li>PhD in Theoretical and Applied Linguistics, 2023-Present</li>
+        <li>MPhil in Theoretical and Applied Linguistics, 2022-2023</li>
+        <li>BA in English, 2018-2022</li>
+      </ul>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="mailto:xl538@cam.ac.uk">📧</a>
+      <a href="https://www.linkedin.com/in/xinbing-luo-bb4581254/">🔗</a>
+    </div>
+  </div>
 </body>
 </html>
