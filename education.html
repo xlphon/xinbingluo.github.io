@@ -51,15 +51,44 @@
       color: #333;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
+    .education-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
       text-align: left;
     }
 
-    li {
-      margin: 5px 0;
+    /* Specific sizes for each logo */
+    .cambridge-logo {
+      width: auto;
+      height: 40px;
+      margin-right: 15px;
     }
+
+    .bfsu-logo {
+      width: auto;
+      height: 40px;
+      margin-right: 15px;
+    }
+
+    .education-details {
+      flex: 1;
+    }
+
+    .degree {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .institution {
+      color: #555;
+    }
+
+    .duration {
+      font-size: 0.9em;
+      color: #777;
+    }
+
   </style>
 </head>
 <body>
@@ -70,16 +99,43 @@
     <a href="interests.html" class="tab">Interests</a>
     <a href="education.html" class="tab">Education</a>
     <a href="publications.html" class="tab">Publications</a>
+    <a href="teaching.html" class="tab">Teaching</a>
   </div>
 
   <!-- Education 内容 -->
   <div class="container">
     <h2>Education</h2>
-    <ul>
-      <li>PhD in Theoretical and Applied Linguistics, 2023-Present</li>
-      <li>MPhil in Theoretical and Applied Linguistics, 2022-2023</li>
-      <li>BA in English, 2018-2022</li>
-    </ul>
+
+    <!-- PhD in University of Cambridge -->
+    <div class="education-item">
+      <img src="cambridge-logo.png" alt="University of Cambridge Logo" class="cambridge-logo">
+      <div class="education-details">
+        <div class="degree">PhD in Theoretical and Applied Linguistics</div>
+        <div class="institution">University of Cambridge</div>
+        <div class="duration">2023 - Present</div>
+      </div>
+    </div>
+
+    <!-- MPhil in University of Cambridge -->
+    <div class="education-item">
+      <img src="cambridge-logo.png" alt="University of Cambridge Logo" class="cambridge-logo">
+      <div class="education-details">
+        <div class="degree">MPhil in Theoretical and Applied Linguistics</div>
+        <div class="institution">University of Cambridge</div>
+        <div class="duration">2022 - 2023</div>
+      </div>
+    </div>
+
+    <!-- BA in Beijing Foreign Studies University -->
+    <div class="education-item">
+      <img src="bfsu-logo.png" alt="Beijing Foreign Studies University Logo" class="bfsu-logo">
+      <div class="education-details">
+        <div class="degree">BA in English</div>
+        <div class="institution">Beijing Foreign Studies University</div>
+        <div class="duration">2018 - 2022</div>
+      </div>
+    </div>
+
   </div>
 
 </body>
